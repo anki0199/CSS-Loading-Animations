@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(30, 29, 29);
+}
+
+div {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 -7px #fff, 0 0 0 -7px #fff, 0 0 0 -15px #fff,
+    0 0 0 -15px #fff;
+  animation: split 2.4s forwards infinite;
+}
+
+@keyframes split {
+  25% {
+    box-shadow: 90px 0 0 -7px #fff, -90px 0 0 -7px #fff, 90px 0 0 -15px #fff,
+      -90 0px 0 0 -15px #fff;
+  }
+  50% {
+    box-shadow: 90px 0 0 -7px #fff, -90px 0 0 -7px #fff, 180px 0 0 -15px #fff,
+      -180px 0 0 -15px #fff;
+  }
+  75% {
+    box-shadow: 90px 0 0 -7px #fff, -90px 0 0 -7px #fff, 90px 0 0 -15px #fff,
+      -90px 0 0 -15px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0 -7px #fff, 0 0 0 -7px #fff, 0 0 0 -15px #fff,
+      0 0 0 -15px #fff;
+  }
+}

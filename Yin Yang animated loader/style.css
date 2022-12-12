@@ -1,0 +1,61 @@
+body{
+    background-color: #cceeff;
+    padding: 0;
+    margin: 0;
+}
+
+.semi-cir1{
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.semi-cir2{
+    background-color: white;
+    height: 250px;
+    width: 125px;
+    border-radius: 125px 0 0 125px;
+}
+
+.c1, .c2{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 250px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1{
+    background-color: black;
+}
+.c2{
+    background-color: white;
+}
+.c1::before,.c2::before{
+    content: "";
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.c1::before{
+    background-color: white;
+}
+.c2::before{
+    background-color: black;
+}

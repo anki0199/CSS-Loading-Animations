@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(67, 11, 11);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.cup {
+  height: 105px;
+  width: 110px;
+  border: 10px solid rgb(67, 11, 11);
+  box-shadow: 0 0 0 10px #fdd8;
+  margin: auto;
+  position: relative;
+  border-radius: 0 0 110px 110px;
+  background-image: linear-gradient(
+    0deg,
+    white 0,
+    white 110px,
+    transparent 110px,
+    transparent 230px
+  );
+  background-size: 230px 230px;
+  background-position: 0 0;
+    animation: fill 2s infinite;
+}
+
+@keyframes fill{
+    100%{
+        background-position: 0 -115px;
+    }
+}
+
+.cup::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 25px;
+    border: 10px solid #fdd8;
+    border-radius: 0 40px 40px 0;
+    right: -60px;
+}

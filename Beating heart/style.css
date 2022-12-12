@@ -1,0 +1,45 @@
+:root {
+  --bgcolor: rgb(140, 115, 82);
+}
+body {
+  background-color: #3e2044;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.heart {
+  height: 100px;
+  width: 100px;
+  background-color: var(--bgcolor);
+  margin: auto;
+  transform: rotate(45deg);
+  animation: beat 2s infinite;
+}
+
+.heart::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 100px;
+  background-color: var(--bgcolor);
+  border-radius: 100px 100px 0 0;
+  top: -59px;
+}
+.heart::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 60px;
+  background-color: var(--bgcolor);
+  border-radius: 100px 0 0 100px;
+  /* top: 19.5px; */
+  right: 100px;
+}
+@keyframes beat {
+  50% {
+    transform: rotate(45deg) scale(0.7);
+  }
+}
