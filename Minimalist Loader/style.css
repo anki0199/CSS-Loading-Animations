@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #7acdca;
+
+}
+
+.loader{
+    height: 150px;
+    width: 685px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 150px;
+    color: #291f24;
+    font-family: 'Raleway', sans-serif;
+
+}
+.spinner{
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid rgba(255, 255, 255, 0.2);
+    border-top-color: white ;
+    animation: spin 2s infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
