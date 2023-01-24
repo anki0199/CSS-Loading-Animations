@@ -4,13 +4,11 @@
   margin: 0;
 }
 body {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ececec;
 }
-
 .container {
   width: 90vw;
   display: flex;
@@ -42,6 +40,9 @@ h2 {
   margin-top: 1rem;
   color: rgb(83, 79, 79);
   text-shadow: 1px 1px 5px rgb(95, 93, 93);
+}
+a {
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .cell {
